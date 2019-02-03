@@ -1,0 +1,106 @@
+%section {
+  padding: 60px 80px;
+  font-size: 27px;
+}
+
+.button {
+  border: 0;
+  margin: 0;
+  border-radius: 10px;
+  padding: 15px 35px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent;
+
+  border: solid 3px black;
+  color: black;
+
+  cursor: pointer;
+
+  &.white {
+    color: white;
+    border: solid 3px white;
+  }
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.navigation {
+  width: 100vw;
+  height: 70px;
+  font-weight: bold;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: linear-gradient(40deg, #d800ff7a, #399faf);
+  border-top: solid 4px white;
+
+  .link {
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+
+    font-size: 40px;
+    color: white;
+
+    text-decoration: none;
+  }
+}
+
+.banner {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background: linear-gradient(40deg, #d800ff7a, #399faf);
+  color: white;
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Staatliches';
+    font-size: 130px;
+  }
+}
+
+.about {
+  @extend %section;
+
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.configuration {
+  @extend %section;
+
+  .line {
+    margin: 40px 0;
+
+    input {
+      margin-left: 10px;
+      font-size: 27px;
+      border: none;
+      border-bottom: solid 2px black;
+      min-width: 20px;
+    }
+  }
+}
+
+.testimonials {
+  @extend %section;
+}
