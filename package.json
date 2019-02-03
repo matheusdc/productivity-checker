@@ -2,6 +2,7 @@
   "name": "productivity-checker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://matheusdc.github.io/productivity-checker/",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
