@@ -15,6 +15,7 @@ class App extends Component {
   };
 
   notifyUser = message => {
+    this.checkAndRequestNotificationPermission();
     return new Notification('Productivity Checker', {
       body: message
     });
@@ -27,8 +28,11 @@ class App extends Component {
     this.setState({ active: true });
   };
 
-  requestNotificationPermission = () => {
-    return Notification.requestPermission();
+  checkAndRequestNotificationPermission = callback => {
+    const { permission } = Notification;
+    if (permission === 'denied' || permission === 'default') {
+      Notification.requestPermission(callback);
+    }
   };
 
   setNofiticationAlert = () => {
@@ -70,7 +74,7 @@ class App extends Component {
 
   render() {
     const { timeInMinutes, message } = this.state;
-    this.requestNotificationPermission();
+    this.checkAndRequestNotificationPermission();
 
     return (
       <div className="App">
