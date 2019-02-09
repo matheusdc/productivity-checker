@@ -1,6 +1,13 @@
 %section {
   padding: 60px 80px;
-  font-size: 27px;
+  font-size: 2em;
+}
+
+@media (max-device-width: 768px) {
+  %section {
+    padding: 30px 40px;
+    font-size: 1em;
+  }
 }
 
 .button {
@@ -8,7 +15,7 @@
   margin: 0;
   border-radius: 10px;
   padding: 15px 35px;
-  font-size: 20px;
+  font-size: 1em;
   font-weight: bold;
   background-color: transparent;
 
@@ -20,6 +27,13 @@
   &.white {
     color: white;
     border: solid 3px white;
+  }
+}
+
+@media (max-device-width: 1024px) {
+  .button {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -46,7 +60,7 @@
     width: 300px;
     text-align: center;
 
-    font-size: 40px;
+    font-size: 2em;
     color: white;
 
     text-decoration: none;
@@ -73,12 +87,19 @@
     align-items: center;
 
     font-family: 'Staatliches';
-    font-size: 130px;
+    font-size: 8em;
+  }
+}
+
+@media (max-device-width: 768px) {
+  .banner .header {
+    font-size: 4em;
   }
 }
 
 .about {
   @extend %section;
+  text-align: justify;
 
   p {
     margin-bottom: 40px;
@@ -93,10 +114,21 @@
 
     input {
       margin-left: 10px;
-      font-size: 27px;
+      font-size: 1em;
       border: none;
       border-bottom: solid 2px black;
       min-width: 20px;
+    }
+  }
+}
+
+@media (max-device-width: 1216px) {
+  .configuration .line {
+    input {
+      font-size: 1em;
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 10px;
     }
   }
 }
