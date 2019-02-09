@@ -69,6 +69,7 @@ class App extends Component {
   };
 
   render() {
+    const { timeInMinutes, message } = this.state;
     this.requestNotificationPermission();
 
     return (
@@ -84,6 +85,8 @@ class App extends Component {
           handleTimeUpdate={this.handleTimeUpdate}
           setNofiticationAlert={this.setNofiticationAlert}
           disableNotificationAlerts={this.disableNotificationAlerts}
+          timeInMinutes={timeInMinutes}
+          message={message}
         />
         <Testimonial />
       </div>

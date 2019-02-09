@@ -4,7 +4,9 @@ const Configuration = ({
   handleMessageUpdate,
   handleTimeUpdate,
   setNofiticationAlert,
-  disableNotificationAlerts
+  disableNotificationAlerts,
+  message,
+  timeInMinutes
 }) => {
   return (
     <div id="customize" className="configuration">
@@ -16,6 +18,7 @@ const Configuration = ({
           className="input"
           type="text"
           placeholder="Notification message"
+          value={message}
         />
       </div>
 
@@ -26,6 +29,7 @@ const Configuration = ({
           className="input"
           type="text"
           placeholder="60"
+          value={timeInMinutes}
         />
       </div>
 
