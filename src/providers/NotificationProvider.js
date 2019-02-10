@@ -1,6 +1,6 @@
 import React, { Component, createContext } from 'react';
 
-export const PRODUCTIVIY_CHECKER_KEY = 'PRODUCTIVIY_CHECKER_CONFIG';
+export const PRODUCTIVIY_CHECKER_KEY = 'PRODUCTIVITY_CHECKER_CONFIGS';
 
 export const NotificationContext = createContext();
 
