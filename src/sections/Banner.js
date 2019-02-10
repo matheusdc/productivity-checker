@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { NotificationContext } from '../providers/NotificationProvider';
 
-const Banner = ({
-  setNofiticationAlert,
-  disableNotificationAlerts,
-  isActive
-}) => {
-  const buttonLabel = isActive
+const Banner = () => {
+  const {
+    areNotificationsActive,
+    enableNotifications,
+    disableNotifications
+  } = useContext(NotificationContext);
+
+  const buttonLabel = areNotificationsActive()
     ? 'Turn off notifications'
     : 'Turn on notifications';
 
   const toggleNotification = () => {
-    if (isActive) {
-      disableNotificationAlerts();
+    if (areNotificationsActive()) {
+      disableNotifications();
       return;
     }
-    setNofiticationAlert();
+    enableNotifications();
   };
 
   return (

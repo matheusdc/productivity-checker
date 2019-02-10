@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { NotificationContext } from '../providers/NotificationProvider';
 
-const Configuration = ({
-  handleMessageUpdate,
-  handleTimeUpdate,
-  setNofiticationAlert,
-  disableNotificationAlerts,
-  message,
-  timeInMinutes
-}) => {
+const Configuration = () => {
+  const {
+    enableNotifications,
+    disableNotifications,
+    setNotificationPreferences,
+    getNotificationPreferences
+  } = useContext(NotificationContext);
+
+  const { message, intervalInMinutes } = getNotificationPreferences();
+
+  const handleMessageUpdate = event => {
+    setNotificationPreferences({ message: event.target.value });
+  };
+
+  const handleTimeUpdate = event => {
+    setNotificationPreferences({
+      intervalInMinutes: Number(event.target.value)
+    });
+  };
+
   return (
     <div id="customize" className="configuration">
       <h1>Customize...</h1>
@@ -29,7 +42,7 @@ const Configuration = ({
           className="input"
           type="text"
           placeholder="60"
-          value={timeInMinutes}
+          value={intervalInMinutes}
         />
       </div>
 
@@ -37,14 +50,14 @@ const Configuration = ({
         <button
           className="button margin-right"
           type="button"
-          onClick={setNofiticationAlert}
+          onClick={enableNotifications}
         >
           Save and activate :)
         </button>
         <button
           className="button margin-right"
           type="button"
-          onClick={disableNotificationAlerts}
+          onClick={disableNotifications}
         >
           Turn off notifications :(
         </button>

@@ -5,8 +5,8 @@
   "homepage": "https://matheusdc.github.io/productivity-checker/",
   "dependencies": {
     "node-sass": "^4.11.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-scripts": "2.1.3",
     "terser": "3.14.1"
   },
