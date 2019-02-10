@@ -1,13 +1,13 @@
 {
-  "main.css": "/productivity-checker/static/css/main.0dee84ee.chunk.css",
-  "main.js": "/productivity-checker/static/js/main.96cf7054.chunk.js",
-  "main.js.map": "/productivity-checker/static/js/main.96cf7054.chunk.js.map",
-  "static/js/1.4e1e73da.chunk.js": "/productivity-checker/static/js/1.4e1e73da.chunk.js",
-  "static/js/1.4e1e73da.chunk.js.map": "/productivity-checker/static/js/1.4e1e73da.chunk.js.map",
+  "main.css": "/productivity-checker/static/css/main.f01ccd26.chunk.css",
+  "main.js": "/productivity-checker/static/js/main.0bd712a8.chunk.js",
+  "main.js.map": "/productivity-checker/static/js/main.0bd712a8.chunk.js.map",
+  "static/js/1.4cc6ef1c.chunk.js": "/productivity-checker/static/js/1.4cc6ef1c.chunk.js",
+  "static/js/1.4cc6ef1c.chunk.js.map": "/productivity-checker/static/js/1.4cc6ef1c.chunk.js.map",
   "runtime~main.js": "/productivity-checker/static/js/runtime~main.17ad65a6.js",
   "runtime~main.js.map": "/productivity-checker/static/js/runtime~main.17ad65a6.js.map",
-  "static/css/main.0dee84ee.chunk.css.map": "/productivity-checker/static/css/main.0dee84ee.chunk.css.map",
+  "static/css/main.f01ccd26.chunk.css.map": "/productivity-checker/static/css/main.f01ccd26.chunk.css.map",
   "index.html": "/productivity-checker/index.html",
-  "precache-manifest.0f187a1637814302dcb46edf404b74d8.js": "/productivity-checker/precache-manifest.0f187a1637814302dcb46edf404b74d8.js",
+  "precache-manifest.24f3729837c6d75e768c19af84b8b36a.js": "/productivity-checker/precache-manifest.24f3729837c6d75e768c19af84b8b36a.js",
   "service-worker.js": "/productivity-checker/service-worker.js"
 }
