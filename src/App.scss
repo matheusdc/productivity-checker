@@ -97,6 +97,17 @@
   }
 }
 
+.timer {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+@media (max-device-width: 768px) {
+  .fuzzy-timer {
+    font-size: 1em;
+  }
+}
+
 .about {
   @extend %section;
   text-align: justify;
@@ -117,7 +128,6 @@
       font-size: 1em;
       border: none;
       border-bottom: solid 2px black;
-      min-width: 450px;
     }
   }
 }

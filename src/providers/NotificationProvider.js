@@ -45,8 +45,13 @@ export default class NotificationProvider extends Component {
     const { intervalInMinutes, message } = this.state;
     const intervalInMili = intervalInMinutes * 60 * 1000;
 
+    this.setState({ timerStart: new Date() });
+
+    clearInterval(this.notificationInterval);
+
     this.notificationInterval = setInterval(() => {
       this.sendNotification(message);
+      this.setState({ timerStart: new Date() });
     }, intervalInMili);
   };
 
@@ -73,8 +78,8 @@ export default class NotificationProvider extends Component {
   };
 
   getNotificationPreferences = () => {
-    const { message, intervalInMinutes } = this.state;
-    return { message, intervalInMinutes };
+    const { message, intervalInMinutes, timerStart } = this.state;
+    return { message, intervalInMinutes, timerStart };
   };
 
   setNotificationPreferences = settings => {

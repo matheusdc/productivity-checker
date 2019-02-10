@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://matheusdc.github.io/productivity-checker/",
   "dependencies": {
+    "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",

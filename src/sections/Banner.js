@@ -1,5 +1,8 @@
 import React, { useContext } from 'react';
+
 import { NotificationContext } from '../providers/NotificationProvider';
+
+import Timer from '../components/Timer';
 
 const Banner = () => {
   const {
@@ -27,6 +30,8 @@ const Banner = () => {
         <span>productive</span>
         <span>right now?</span>
       </div>
+
+      <Timer />
 
       <div className="controls">
         <button className="button white" onClick={toggleNotification}>
